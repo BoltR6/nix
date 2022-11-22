@@ -46,6 +46,7 @@
   services.xserver = {
     layout = "us";
     xkbVariant = "";
+    xkbOptions = "grp:alt_space_toggle";
   };
 
   # Enable CUPS to print documents.
@@ -103,6 +104,7 @@
     dotnet-sdk
     git
     gcc-arm-embedded
+    kanata
   #  wget
   ];
   environment.shells = with pkgs; [ fish ];
