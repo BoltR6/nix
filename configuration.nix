@@ -7,6 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
+      <nixos-hardware/asus/zephyrus/ga401>
       ./hardware-configuration.nix
     ];
 
