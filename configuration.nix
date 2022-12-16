@@ -88,6 +88,8 @@
       thunderbird
       discord
       stack
+      logseq
+      onedrive
     ];
   };
 
