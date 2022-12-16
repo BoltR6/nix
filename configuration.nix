@@ -33,6 +33,16 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.utf8";
 
+  # Define Kanata Start Package
+  systemd.services.launch-kanata = {
+    description = "Launches Kanata";
+    wantedBy = [ "johnww.target" ];
+    serviceConfig = {
+      ExecStart = "/home/johnww/Documents/launchkanata.sh";
+    };
+  };
+  systemd.services.launch-kanata.enable = true;
+
   #Enable AMD GPU Drivers
   #services.xserver.videoDrivers = [ "amdgpu-pro" ];
 
