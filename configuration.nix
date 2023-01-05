@@ -100,6 +100,8 @@
       stack
       logseq
       onedrive
+      audacity
+      lightworks
     ];
   };
 
@@ -118,6 +120,7 @@
     git
     gcc-arm-embedded
     kanata
+    openai
   #  wget
   ];
   environment.shells = with pkgs; [ fish ];
